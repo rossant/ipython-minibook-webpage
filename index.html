@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Learning IPython for Interactive Computing and Data Visualization - Cyrille Rossant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      
+      .infolist {
+        text-align: left;
+        font-size: 18px;
+        padding: 0 0 0 20px;
+      }
+      
+      .infolist ul {
+        margin: 0 0 20px 40px;
+      }
+      
+      .infolist li {
+        margin: 10px 0;
+      }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="bootstrap/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">Learning IPython for Interactive Computing and Data Visualization</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li class="active"><a href="http://ipython.rossant.net">Home</a></li>
+                <li><a href="http://www.packtpub.com/learning-ipython-for-interactive-computing-and-data-visualization/book">Get the book</a></li>
+                <li><a href="#">Announcement</a></li>
+                <li><a href="https://github.com/rossant/ipython-minibook">Examples</a></li>
+                <li><a href="http://ipython.org/">IPython</a></li>
+                <li><a href="http://cyrille.rossant.net">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>IPython mini-book</h1>
+        
+        <div style="margin: 60px 0;"></div>
+        
+        <div class="row-fluid">
+            
+            <div class="span4"><a href="http://www.packtpub.com/learning-ipython-for-interactive-computing-and-data-visualization/book"><img src="http://www.packtpub.com/sites/default/files/9932os_mockupcover_normal.jpg" width="300" class="img-polaroid" /></a></div>
+            
+            <div class="lead"><p><strong>Learning IPython for Interactive Computing and Data Visualization</strong>, by <a href="http://cyrille.rossant.net">Cyrille Rossant</a>, <a href="http://www.packtpub.com/">Packt Publishing</a>, 2013.</p></div>
+            
+            <div class="span8 infolist">This book targets developers, students, teachers, hobbyists who already know Python, and want to learn IPython for the extended console, the Notebook, and more advanced scientific applications. It covers: <ul>
+            <li>interactive Python programming</li>
+            <li>numerical computing</li>
+            <li>data visualization</li>
+            <li>high performance and parallel computing</li>
+            </ul>
+            </div>
+            
+            <a class="btn btn-large btn-success" href="http://www.packtpub.com/learning-ipython-for-interactive-computing-and-data-visualization/book">Get the book</a>
+            <a class="btn btn-large" href="https://github.com/rossant/ipython-minibook">Get the code</a>
+            
+        
+        
+        </div>
+        
+      </div>
+
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+      
+        <div class="span4">
+          <h2>Interactive programming</h2>
+          <p>Increase your productivity when you create, debug, benchmark and profile Python code in an interactive session. </p>
+        </div>
+        
+        <div class="span4">
+          <h2>Numerical computing</h2>
+          <p>Learn the basics of vector computing, and discover how to load and analyze numerical or tabular data with <a href="http://www.numpy.org">NumPy</a> and <a href="http://pandas.pydata.org">Pandas</a>. </p>
+       </div>
+      
+        <div class="span4">
+          <h2>Data visualization</h2>
+          <p>Create interactive data visualizations with <a href="http://matplotlib.org/">Matplotlib</a>, and implement image processing algorithms with <a href="http://www.scipy.org/">SciPy</a> and <a href="http://www.pythonware.com/products/pil/">PIL</a>.</p>
+        </div>
+       
+      </div>
+      
+      
+        
+      <div class="row-fluid">
+      
+      
+        <div class="span4">
+          <h2>IPython Notebook</h2>
+          <p>Learn how to use the <a href="http://ipython.org/notebook.html">Notebook</a> as a modern tool for reproducible interactive programming with Python. </p>
+          </div>
+          
+        <div class="span4">
+          <h2>Profiling and benchmarking</h2>
+          <p>Learn how to profile and benchmark your code with IPython to find where to optimize. </p>
+       </div>
+      
+        <div class="span4">
+          <h2>High-performance computing</h2>
+          <p>Accelerate your code using IPython's interactive parallel computing features, and compile a portion of your code in C with <a href="http://cython.org/">Cython</a> for really interesting speedups. </p>
+       </div>
+       
+      
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Cyrille Rossant, Packt Publishing 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+
+    
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8870966; 
+var sc_invisible=1; 
+var sc_security="07fbf89d"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="free hit
+counters" href="http://statcounter.com/free-hit-counter/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/8870966/0/07fbf89d/1/"
+alt="free hit counters"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+    
+    
+  </body>
+</html>
